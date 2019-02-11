@@ -111,3 +111,9 @@ package-lock.json
 # BOT #
 ################
 config.js
+
+# testing
+/coverage
+
+# production
+/build
