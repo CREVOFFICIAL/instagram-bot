@@ -1,0 +1,71 @@
+{
+    "env":
+    {
+        "browser": true,
+        "es6": true,
+        "node": true,
+        "mocha": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions":
+    {
+        "sourceType": "module",
+        "ecmaVersion": 2017
+    },
+    "plugins": [
+        "snakecasejs",
+        "mocha"
+    ],
+    "rules":
+    {
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": [
+            "warn"
+        ],
+        "no-constant-condition": [
+            "warn"
+        ],
+        "curly": ["error", "all"],
+        "brace-style": ["error", "1tbs",
+        {
+            "allowSingleLine": false
+        }],
+        "keyword-spacing": ["error",
+        {
+            "before": true,
+            "after": true
+        }],
+        "object-curly-spacing": ["error", "never"],
+        "spaced-comment": [2, "always"],
+        "space-before-function-paren": ["error", "always"],
+        "prefer-template": "error",
+        "no-useless-concat": "error",
+        "template-curly-spacing": ["error", "never"],
+        "no-multiple-empty-lines": ["error",
+        {
+            "max": 1,
+            "maxEOF": 0
+        }],
+        "mocha/no-exclusive-tests": "error",
+        "snakecasejs/snakecasejs": "warn",
+        "snakecasejs/whitelist": ["defaultViewport", "executablePath"]
+    }
+}

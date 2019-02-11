@@ -1,0 +1,81 @@
+{
+  "name": "instagrambotlib",
+  "description": "Instagram Bot API",
+  "version": "0.9.10-nightly.20181104",
+  "main": "lib.js",
+  "author": "Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptkdev.it)",
+  "license": "GPL-3.0",
+  "homepage": "https://instagram.bot.ptkdev.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/social-manager-tools/instagram-bot-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/social-manager-tools/instagram-bot-lib/issues"
+  },
+  "scripts": {
+    "start": "node bot.js",
+    "stop": "killall node",
+    "start-pm2": "pm2 bot.js",
+    "stop-pm2": "pm2 stop bot.js",
+    "clean": "rm -rf node_modules && rm -f package-lock.json && npm install",
+    "update": "rm -f package-lock.json && npm update",
+    "lint": "eslint ./ --cache --ignore-pattern .gitignore --fix",
+    "precommit-lint-check": "echo 'Pre-commit lint checks...' && exit 0",
+    "git-set-upstream": "git remote add upstream git@github.com:social-manager-tools/instagram-bot-lib.git && git fetch upstream",
+    "git-pull-upstream": "git pull upstream master && git pull upstream beta && git pull upstream nightly",
+    "git-switch-master": "git checkout master",
+    "git-switch-beta": "git checkout beta",
+    "git-switch-nightly": "git checkout nightly",
+    "git-pull": "git pull",
+    "git-ignore-reset": "git rm -r --cached . && git add . && git commit -m \"[Fix] Removing all files in .gitignore\"",
+    "npm-publish-master": "git checkout master && npm publish",
+    "npm-publish-beta": "git checkout beta && npm publish --tag beta",
+    "npm-publish-nightly": "git checkout nightly && git checkout nightly",
+    "tests": "mocha tests --recursive"
+  },
+  "pre-commit": [
+    "precommit-lint-check",
+    "lint"
+  ],
+  "keywords": [
+    "bot",
+    "ptkdev",
+    "instagram",
+    "instagram-lib",
+    "instagram-api",
+    "instagram-bot",
+    "instagram-puppeteer",
+    "instapy",
+    "instabot",
+    "instagress",
+    "puppeteer",
+    "selenium",
+    "webdriverio"
+  ],
+  "dependencies": {
+    "puppeteer": "1.7.0",
+    "compare-versions": "latest",
+    "colors": "latest",
+    "path": "latest",
+    "request": "latest",
+    "sqlite3": "latest"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "chai": "latest",
+    "yargs": "latest",
+    "eslint": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-mocha": "latest",
+    "eslint-plugin-node": "latest",
+    "eslint-plugin-promise": "latest",
+    "eslint-plugin-snakecasejs": "latest",
+    "eslint-plugin-standard": "latest",
+    "pre-commit": "latest"
+  }
+}

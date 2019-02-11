@@ -1,0 +1,113 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Eclipse #
+###########
+.classpath
+.project
+.settings
+.idea
+.idea/
+.metadata
+*.iml
+*.ipr
+proguard/
+
+# Logs and databases #
+######################
+logs/*.log
+logs/screenshot/*.png
+logs/screenshot/*.jpg
+databases/*.db
+*.log
+*.sql
+*.sqlite
+*.lock
+*.vscode
+yarn-debug.log
+yarn-error.log
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+loginpin.txt
+
+# Python #
+##########
+*.pyc
+*.pyo
+
+# KDE/Linux generated files #
+#############################
+.directory
+
+# Backup generated files #
+##########################
+*~
+*.swp
+*.bak
+*#
+
+# Android #
+###########
+*.apk
+*.ap_
+*.dex
+bin/
+gen/
+.gradle/
+build/
+local.properties
+
+# Vagrant #
+###########
+/.vagrant
+
+# PHP #
+#######
+./config.php
+phpunit.xml
+/vendor
+composer.phar
+
+# Runtime data #
+################
+pids
+*.pid
+*.seed
+*.pid.lock
+*.eslintcache
+
+# NodeJS #
+##########
+npm-debug.log
+/node_modules
+/bower_components
+package-lock.json
+
+# BOT #
+################
+config.js
