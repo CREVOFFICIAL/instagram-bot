@@ -68,7 +68,6 @@
     "mocha": "latest",
     "chai": "latest",
     "yargs": "latest",
-    "eslint": "latest",
     "eslint-config-standard": "latest",
     "eslint-plugin-import": "latest",
     "eslint-plugin-mocha": "latest",

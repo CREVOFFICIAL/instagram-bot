@@ -35,5 +35,8 @@
     "semi": false,
     "singleQuote": true,
     "printWidth": 80
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.12.4"
   }
 }
